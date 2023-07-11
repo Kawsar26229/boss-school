@@ -67,7 +67,6 @@ h4 {
 a:link,
 a:visited,
 a:active {
-  color: var(--text-body);
   transition: var(--transition);
 }
 
@@ -82,6 +81,18 @@ img {
   width: 100%;
 }
 
+#btn {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--tertiary-color);
+  border-radius: 2rem;
+  color: #fff;
+  transition: var(--transition);
+}
+
+#btn:hover {
+  color: #ffffffc9;
+}
+
 /* Header */
 header {
   background-color: var(--primary-color);
@@ -90,7 +101,7 @@ header {
 nav {
   width: 100%;
   height: min-content;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .nav__container {
@@ -106,4 +117,25 @@ nav {
 
 .img__logo {
   width: 10%;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav__links a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: var(--transition);
+  color: var(--text-body);
+}
+
+.nav__links a:hover {
+  color: #a18a8a;
+}
+
+.btn--primary {
+  color: #fff;
 }
