@@ -284,3 +284,35 @@ nav {
   width: 70%;
   color: var(--text-body-light);
 }
+
+/* Footer Styles */
+footer {
+  background-color: var(--footer-color);
+  color: #fff;
+}
+
+footer p {
+  color: var(--text-body-light);
+}
+
+.footer__container {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.footer__box h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.footer__box h5 {
+  font-size: 1rem;
+}
+
+.footer__copyright {
+  text-align: center;
+  padding: 2rem 0;
+}
