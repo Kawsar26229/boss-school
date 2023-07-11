@@ -9,6 +9,7 @@
 
   --text-heading: #252628;
   --text-body: #303640;
+  --text-body-light: #888e97;
 
   --transition: all 0.3s ease-in-out;
 
@@ -44,12 +45,12 @@ h1,
 h2,
 h4 {
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: var(--text-heading);
 }
 
@@ -68,6 +69,10 @@ a:link,
 a:visited,
 a:active {
   transition: var(--transition);
+}
+
+.text-primary {
+  color: var(--tertiary-color);
 }
 
 /* General Styles */
@@ -138,4 +143,33 @@ nav {
 
 .btn--primary {
   color: #fff;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(2, 43% 53%);
+  gap: 4rem;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-danger {
+  color: orangered;
+  font-size: 1.1rem;
+}
+
+.hero__left a {
+  font-size: 1.1rem;
+  width: 20%;
+}
+
+.hero-light {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: var(--text-body-light);
+  line-height: 2;
 }
