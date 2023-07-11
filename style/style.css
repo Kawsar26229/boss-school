@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+  --primary-color: #f1fff0;
+  --secondary-color: #f8fefa;
+  --tertiary-color: #20b36f;
+  --footer-color: #282530;
+  --color--light: #ffffff;
+
+  --text-heading: #252628;
+  --text-body: #303640;
+
+  --transition: all 0.3s ease-in-out;
+
+  --width-lg: 88%;
+  --width-md: 94%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  color: var(--text-body);
+  background-color: var(--color--light);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h4 {
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--text-heading);
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: var(--text-heading);
+}
+
+h4 {
+  font-size: 1.3rem;
+  color: var(--text-heading);
+  font-weight: 900;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: var(--text-body);
+  transition: var(--transition);
+}
+
+/* General Styles */
+.container {
+  width: var(--width-lg);
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+}
+
+nav {
+  width: 100%;
+  height: min-content;
+  padding-top: 1rem;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo > a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.img__logo {
+  width: 10%;
+}
