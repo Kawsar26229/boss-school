@@ -261,3 +261,26 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+/* Testimonial Styles */
+.testimonial__container {
+  display: flex;
+  gap: 2rem;
+  width: 50%;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.profile__img {
+  width: 10%;
+  aspect-ratio: 1 / 1;
+}
+
+.profile__img img {
+  border-radius: 50%;
+}
+
+.testimonial__container p {
+  width: 70%;
+  color: var(--text-body-light);
+}
